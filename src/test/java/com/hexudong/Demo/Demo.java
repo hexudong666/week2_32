@@ -27,7 +27,7 @@ public class Demo {
 	@Test
 	public void JDKDemo() {
 		ArrayList<User> list = new ArrayList<>();
-		for (int i = 0; i < 50000; i++) {
+		for (int i = 0; i < 100000; i++) {
 		//新定义一个对象
 		User user = new User();
 		//随机生成名字
@@ -66,7 +66,7 @@ public class Demo {
 	@Test
 	public void JSONDemo() {
 		ArrayList<User> list = new ArrayList<>();
-		for (int i = 0; i < 50000; i++) {
+		for (int i = 0; i < 100000; i++) {
 		//新定义一个对象
 		User user = new User();
 		//随机生成名字
@@ -105,7 +105,7 @@ public class Demo {
 	public void HashDemo() {
 		HashMap<String, User> map = new HashMap<>();
 		User user = new User();
-		for (int i = 0; i < 50000; i++) {
+		for (int i = 0; i < 100000; i++) {
 		//新定义一个对象
 		//随机生成名字
 		String name = StringUtil.randomChineseName();
@@ -114,7 +114,6 @@ public class Demo {
 		user.setName(name+i);
 		//给性别赋值
 			if (i/2==0) {
-				user.setSex("男");
 			}else {
 				user.setSex("女");
 			}
